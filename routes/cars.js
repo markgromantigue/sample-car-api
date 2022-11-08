@@ -49,7 +49,7 @@ router.post('/addCar', function(req, res, next) {
   });
 
 // PUT request for adding a new car
-router.post('/modifyCar/:id', function(req, res, next) {
+router.put('/modifyCar/:id', function(req, res, next) {
     //Append new value to JSON
     carsJson.forEach(function(i, index, array){
         if(i.id == req.params.id){
